@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 13%;
+    height: 13%;
+    margin: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: auto;
+    max-width: 60vw;
+    height: 50vh;
+    overflow-y: auto;
+    background-color: black;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+.message {
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    color: greenyellow;
+    font-family: 'Audiowide', cursive;
+}
+
+.Left {
+    text-align: left;
+    float: left;
+    clear: both;
+}
+
+.Middle {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    clear: both;
+}
+
+.Right {
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+#sendContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#messageInput {
+    width: 40%;
+    height: 2.3rem;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Audiowide', cursive;
+    border: 2px solid white;
+}
+
+.btn {
+    background-color:greenyellow;
+    border-radius: 10px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Audiowide', cursive;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 1.2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.Social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Social-media a {
+    display: flex;
+    background: greenyellow;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 3px 3px 10px -1px rgba(0, 124, 196, 0.15),
+                -3px -3px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 124, 196, 0);
+    transition: transform 0.5s;
+    margin: 5px;
+}
+
+.Social-media a i {
+    font-size: 10px;
+    color: black;
+    transition: transform 0.5s;
+}
+
+.Social-media a:hover {
+    box-shadow: inset 4px 4px 6px -2px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px -1px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 124, 196, 0.1);
+    transform: translateY(2px);
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 30%;
+        height: 30%;
+        margin: 2rem;
+   }
+    .container {
+        border-radius: 10px;
+        border: 2px solid white;
+        margin: auto;
+        max-width: 80vw;
+        height: 50vh;
+        overflow-y: auto;
+        background-color: black;
+        scroll-behavior: smooth;
+	overflow-y: hidden;
+    }
+
+    .Social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #messageInput {
+        width: 50%;
+        height: 2.3rem;
+        border-radius: 10px;
+        margin: 1rem;
+        background-color: black;
+        color: greenyellow;
+        font-family: 'Audiowide', cursive;
+        border: 2px solid white;
+    }
+    .Middle {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+}
