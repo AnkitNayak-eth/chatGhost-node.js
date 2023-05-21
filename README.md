@@ -51,7 +51,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/AnkitNayak-eth/chatGhost
 
 2. Navigate to the nodeServer directory:
 
