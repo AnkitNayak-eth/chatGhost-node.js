@@ -1,0 +1,16 @@
+{
+  "name": "chatghost",
+  "version": "1.0.0",
+  "description": "A Secure and Anonymous Web Chat Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
