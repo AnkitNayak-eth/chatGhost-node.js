@@ -85,3 +85,12 @@ This project is licensed under the MIT License.
 ## Contribution
 Contributing: Contributions to the code are welcome!. Please fork the repository and submit a pull request with your changes.
 
+# Thank you
+
+Thank you for checking out ChatGhost!
+
+We appreciate your interest in our project. Your support and feedback are invaluable. Feel free to contribute and help us improve ChatGhost.
+
+Happy chatting!
+
+
