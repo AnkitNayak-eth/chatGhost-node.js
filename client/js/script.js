@@ -40,9 +40,9 @@ const socket = io('http://141.148.214.44:8080');
 const form = document.getElementById('sendContainer');
 const messageInput = document.getElementById('messageInput');
 const messageContainer = document.querySelector(".container");
-var audio1 = new Audio('/client/sfx/sfx1.mp3')
-var audio2 = new Audio('/client/sfx/sfx2.mp3')
-var audio3 = new Audio('/client/sfx/sfx3.mp3')
+var audio1 = new Audio('sfx/sfx1.mp3')
+var audio2 = new Audio('sfx/sfx2.mp3')
+var audio3 = new Audio('sfx/sfx3.mp3')
 
 const append = (message, position) => {
   const messageElement = document.createElement('div');
