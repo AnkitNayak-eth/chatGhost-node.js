@@ -5,7 +5,6 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-// Define a route handler for the root endpoint
 app.get('/', (req, res) => {
   res.send('hello ankit');
 });
