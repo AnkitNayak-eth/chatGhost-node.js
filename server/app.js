@@ -5,13 +5,18 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
+// Define a route handler for the root endpoint
+app.get('/', (req, res) => {
+  res.send('hello ankit');
+});
+
 const server = app.listen(8000, () => {
   console.log('Server is running on port 8000');
 });
 
 const io = socketIO(server, {
   cors: {
-    origin: "http://127.0.0.1:5501",
+    origin: "https://chat-ghost.netlify.app/",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
@@ -35,4 +40,3 @@ io.on('connection', socket => {
     delete users[socket.id];
   });
 });
-
