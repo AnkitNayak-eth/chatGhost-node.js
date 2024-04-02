@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('hello ankit');
+  res.send('Hello Ankit API is Working');
 });
 
 const server = app.listen(8000, () => {
@@ -15,7 +15,7 @@ const server = app.listen(8000, () => {
 
 const io = socketIO(server, {
   cors: {
-    origin: "https://chat-ghost.netlify.app/",
+    origin: "https://chat-ghost.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
