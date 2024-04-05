@@ -36,7 +36,7 @@ function draw() {
 
 setInterval(draw, 30);
 
-const socket = io('https://chat-ghost-backend.vercel.app/');
+const socket = io('https://dupetheduck.co/chatghost');
 const form = document.getElementById('sendContainer');
 const messageInput = document.getElementById('messageInput');
 const messageContainer = document.querySelector(".container");

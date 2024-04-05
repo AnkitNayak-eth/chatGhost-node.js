@@ -1,5 +1,4 @@
 const express = require('express');
-const http = require('http');
 const socketIO = require('socket.io');
 const cors = require('cors');
 
@@ -7,10 +6,13 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('hello ankit');
+  res.send('Hello Ankit API is Working');
 });
 
-const server = http.createServer(app);
+const server = app.listen(8000, () => {
+  console.log('Server is running on port 8000');
+});
+
 const io = socketIO(server, {
   cors: {
     origin: "https://chat-ghost.netlify.app",
@@ -36,9 +38,4 @@ io.on('connection', socket => {
     socket.broadcast.emit('out', users[socket.id]);
     delete users[socket.id];
   });
-});
-
-const PORT = process.env.PORT || 8000;
-server.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
 });
