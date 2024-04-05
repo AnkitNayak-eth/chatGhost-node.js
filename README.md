@@ -8,7 +8,7 @@
 ![App Screenshot](https://github.com/AnkitNayak-eth/chatGhost/assets/52006128/e3579b7c-ca91-4324-bcec-cf12b258ce18)
 
 ## Demo
-[<=ENTER=>](http://141.148.214.44/) to the anonymous realm with chatGhost
+[<=ENTER=>](https://chat-ghost.netlify.app/) to the anonymous realm with chatGhost
 
 
 ## Built With
