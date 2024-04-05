@@ -36,7 +36,9 @@ function draw() {
 
 setInterval(draw, 30);
 
-const socket = io('https://dupetheduck.co/chatghost');
+const socket = io('https://dupetheduck.co', { path: '/chatghost/socket.io' });
+
+
 const form = document.getElementById('sendContainer');
 const messageInput = document.getElementById('messageInput');
 const messageContainer = document.querySelector(".container");
