@@ -36,7 +36,7 @@ function draw() {
 
 setInterval(draw, 30);
 
-const socket = io('http://141.148.214.44:8000');
+const socket = io('https://devankit.duckdns.org', { path: '/socket.io' });
 
 
 const form = document.getElementById('sendContainer');
